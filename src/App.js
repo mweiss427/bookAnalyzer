@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import NextUp from './components/NextUp';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> Books </h1>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridGap: 20 }}>
+        <div> Up Next
+        <NextUp/>
+        </div>
+
+        <div>Book</div>
+        <div>Author</div>
+      </div>
     </div>
   );
 }
